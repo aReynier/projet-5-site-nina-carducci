@@ -6,7 +6,11 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+img {
+	max-width: 100%;
+	height: auto;
+  }
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,7 +22,7 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+header .name {
 	font-size: 26px;
 }
 
@@ -100,13 +104,13 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-link.active-tag, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #BEB45A;
-	border-radius: 0;
-}
 .nav-pills .nav-link {
 	color: #000;
+}
+.nav-pills .nav-link.active, .nav-link.active-tag, .nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #7F7733;
+	border-radius: 0;
 }
 .nav-link{
 	cursor: pointer;
@@ -147,13 +151,13 @@ body {
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
 
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -323,15 +327,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header .nav, header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
