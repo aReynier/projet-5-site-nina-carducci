@@ -83,15 +83,18 @@ header .name {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
-.about-me__introduction {
-	font-family: 'Spectral';
-	font-weight: 800;
-	font-style: italic;
-	width: 60%;
-}
 #about-me p {
 	width: 80%;
 	font-size: 14px;
+}
+#about-me .about-me__introduction {
+	font-family: 'Spectral';
+	font-size: 1rem;
+	font-weight: 800;
+	font-style: italic;
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
+	width: 60%;
 }
 
 #gallery {
@@ -152,9 +155,10 @@ header .name {
 }
 .quote__text {
 	font-family: 'Spectral';
+	font-size: calc(1.375rem + 1.5vw);
 	font-style: italic;
 	font-weight: 300;
-
+	line-height: 1.2;
 }
 .quote__author {
 	font-family: 'Spectral';
@@ -251,6 +255,20 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+footer{
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.footer_snippet{
+	text-align:center;
+	width: 30%;
+}
+
+footer h2{
+	font-size: 26px;
+}
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -360,4 +378,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
