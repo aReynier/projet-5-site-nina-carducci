@@ -132,21 +132,6 @@ p {
   margin-bottom: 1rem;
 }
 
-abbr[title],
-abbr[data-bs-original-title] {
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-  cursor: help;
-  -webkit-text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
-}
-
-address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
-}
-
 ol,
 ul {
   padding-left: 2rem;
@@ -166,9 +151,6 @@ blockquote {
 a {
   color: #0d6efd;
   text-decoration: underline;
-}
-a:hover {
-  color: #0a58ca;
 }
 
 figure {
@@ -209,17 +191,13 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled) {
   cursor: pointer;
-}
-
-::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
 }
 
 textarea {
